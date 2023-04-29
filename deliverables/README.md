@@ -1,3 +1,3 @@
 # Deliverables
 
-Project ideas for practicing Agile Development.
+Project ideas for practicing HTML & CSS.
