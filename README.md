@@ -118,8 +118,6 @@ These 4 columns may be helpful:
 
 </details>
 
-[TOP](#HTML & CSS)
-
 ---
 
 ## Setting Up
@@ -139,8 +137,6 @@ These 4 columns may be helpful:
 > It's highly recommended that you use either Linux or Mac. If you have a
 > Windows computer you can either dual-boot your computer or install a virtual
 > machine.
-
-[TOP](#HTML & CSS)
 
 ---
 
@@ -202,8 +198,6 @@ in this repsitory using
 [html-validate](https://gitlab.com/html-validate/html-validate).
 
 </details>
-
-[TOP](#HTML & CSS)
 
 ## Class recording
 
