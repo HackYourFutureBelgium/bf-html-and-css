@@ -16,7 +16,9 @@
 
 ## Responsive website
 
-> What is [a responsive webiste](../materials/responsive.md)
+> What is a responsive webiste?
+
+[a responsive webiste](../materials/responsive.md)
 
 ## Projects
 
