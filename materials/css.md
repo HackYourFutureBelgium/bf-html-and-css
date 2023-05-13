@@ -123,11 +123,11 @@ Style the first letter, or line, of an element
 Insert content before, or after, the content of an element */
 
 h1::before {
-  content: url(smiley.gif);
+  content: url(./smiley.gif);
 }
 
 h1::after {
-  content: url(smiley.gif);
+  content: url(./smiley.gif);
 }
 ```
 

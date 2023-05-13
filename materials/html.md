@@ -226,6 +226,7 @@ defines its content.
   <input type="text" id="lastName" name="lastName" />
 </form>
 
+<!-- 
 <input type="button" />
 <input type="checkbox" />
 <input type="color" />
@@ -246,7 +247,8 @@ defines its content.
 <input type="text" />
 <input type="time" />
 <input type="url" />
-<input type="week" />
+<input type="week" /> 
+-->
 ```
 
 ### Videos
