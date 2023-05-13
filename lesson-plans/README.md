@@ -1,7 +1,5 @@
 # HTML & CSS
 
-> What is HTML?
-
 ## HTML
 
 > What is HTML?
@@ -22,4 +20,4 @@
 
 ## Projects
 
-1. [Portfolio](../deliverables/portfolio.md)
+[Portfolio](../deliverables/portfolio.md)
