@@ -1,0 +1,21 @@
+.test {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  border: 2px red dashed;
+}
+
+p.paragraph {
+  background-color: #fff;
+  background-image: url(../assets/html-css.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+p {
+  margin: 2px 3px 4px 5px;
+}
+
+ul {
+  list-style: none;
+  visibility: hidden;
+}

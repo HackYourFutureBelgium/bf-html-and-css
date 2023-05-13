@@ -35,7 +35,14 @@
     "wireframe",
     "Yodiz",
     "Zepel",
-    "respnosive"
+    "respnosive",
+    "Combinator",
+    "Alfreds",
+    "Futterkiste",
+    "Anders",
+    "Centro",
+    "comercial",
+    "Moctezuma"
   ],
   "ignorePaths": ["node_modules/**", "**/*.json", "**/*.mp4", "**/*.svg"]
 }
