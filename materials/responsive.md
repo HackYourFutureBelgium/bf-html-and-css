@@ -60,47 +60,47 @@ platform and orientation.
 
 /* =========== Mobile first ======== */
 /* Mobile S */
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .showcase {
     width: 50%;
   }
 }
 /* Mobile M */
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .showcase {
     width: 60%;
   }
 }
 /* Mobile L */
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .showcase {
     width: 65%;
   }
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .showcase {
     width: 70%;
   }
 }
 
 /* Laptop */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .showcase {
     width: 80%;
   }
 }
 
 /* Desktop */
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   .showcase {
     width: 90%;
   }
 }
 
 /* 4K screen */
-@media (max-width: 2560px) {
+@media (min-width: 2560px) {
   .showcase {
     width: 100%;
   }
