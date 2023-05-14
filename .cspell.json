@@ -42,7 +42,8 @@
     "Anders",
     "Centro",
     "comercial",
-    "Moctezuma"
+    "Moctezuma",
+    "Combinators"
   ],
   "ignorePaths": ["node_modules/**", "**/*.json", "**/*.mp4", "**/*.svg"]
 }

@@ -44,6 +44,17 @@ develop websites written with HTML.
         inspector
   - [ ] make temporary changes in a web page from the Elements tab to see how
         they will look
+- [ ] HTML elements
+- [ ] HTML attributes
+- [ ] HTML comments
+- [ ] HTML links
+- [ ] HTML tables
+- [ ] HTML lists
+- [ ] HTML Iframe
+- [ ] HTML entities
+- [ ] HTML symbols
+- [ ] HTML forms
+- [ ] HTML media
 
 ## [2. Developing CSS](./2-developing-css)
 
@@ -65,6 +76,21 @@ develop websites written with HTML and CSS.
   - [ ] find the styles for any element in the Elements tab
   - [ ] make temporary changes in a web page from the Elements tab to see how
         they will look
+- [ ] css selectors
+- [ ] CSS comments
+- [ ] Box model
+- [ ] Display
+- [ ] Position
+- [ ] Z-index
+- [ ] Overflow
+- [ ] Combinators
+- [ ] Float
+- [ ] Inline-block
+- [ ] pseudo class
+- [ ] pseudo elements
+- [ ] CSS units
+- [ ] Specificity
+- [ ] importance
 
 ## [3. Responsive Design](./3-respnosive-design)
 
@@ -80,6 +106,8 @@ size, platform and orientation.
   - [ ] use device toolbar to view your website on different devices
   - [ ] add media queries to make sure your website respond to screen size
         changes
+- [ ] View port
+- [ ] Media queries
 
 ## Study Tips
 

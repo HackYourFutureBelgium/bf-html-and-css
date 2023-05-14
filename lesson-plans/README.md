@@ -10,7 +10,9 @@
 
 > What is CSS?
 
-[css](../materials/css.md)
+[css basic](../materials/css-basic.md)
+
+[css advanced](../materials/css-advanced.md)
 
 ## Responsive website
 
