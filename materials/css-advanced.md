@@ -152,7 +152,7 @@ when the user moves the mouse pointer over an element
   z-index: 1;
 }
 
-.tooltip: hover .tooltip-text {
+.tooltip:hover .tooltip-text {
   visibility: visible;
 }
 ```
