@@ -170,7 +170,15 @@ section > h2 {
   /* 
   color: hsl(60, 3%, 13%);
   color: rgb(34, 34, 32);
-   */
+
+  An HSL color value is specified with: hsl(hue, saturation, lightness).
+  Hue is a degree on the color wheel (from 0 to 360):
+  0 (or 360) is red
+  120 is green
+  240 is blue
+  Saturation is a percentage value: 100% is the full color.
+  Lightness is also a percentage; 0% is dark (black) and 100% is white.
+  */
 }
 ```
 

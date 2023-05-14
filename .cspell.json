@@ -43,7 +43,8 @@
     "Centro",
     "comercial",
     "Moctezuma",
-    "Combinators"
+    "Combinators",
+    "keyframes"
   ],
   "ignorePaths": ["node_modules/**", "**/*.json", "**/*.mp4", "**/*.svg"]
 }
