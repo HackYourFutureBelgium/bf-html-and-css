@@ -25,3 +25,4 @@
 - [W3 school](https://www.w3schools.com/css/css3_mediaqueries.asp)
 - [Css media query](https://www.youtube.com/watch?v=yU7jJ3NbPdA)
 - [Master media queries](https://www.youtube.com/watch?v=K24lUqcT0Ms)
+- [Responsive web design](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/#:~:text=Responsive%20Web%20design%20is%20the,use%20of%20CSS%20media%20queries.)

@@ -89,7 +89,7 @@ animation : allows an element gradually change from one style to another.
 To use CSS animation, you must first specify some keyframes for the animation.
 */
 
-@keyframes color-change {
+@keyframes box-move {
   0% {
     background-color: red;
     left: 0px;
@@ -123,7 +123,7 @@ div {
   height: 100px;
   position: relative;
   background-color: red;
-  animation-name: color-change;
+  animation-name: box-move;
   animation-duration: 10s;
   animation-delay: 2s;
   animation-iteration-count: 3;
