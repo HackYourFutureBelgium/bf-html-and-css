@@ -233,4 +233,6 @@ in this repsitory using
 <summary>expand/collapse</summary>
 <br>
 
+- [Day 1](https://www.youtube.com/watch?v=ZJnIQBMh3lo)
+
 </details>
