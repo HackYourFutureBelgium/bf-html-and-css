@@ -1,7 +1,7 @@
 {
-  "name": "bf-agile-development",
+  "name": "bf-html-and-css",
   "version": "1.0.0",
-  "description": "examples, exercises and guides for the Agile Development module at HYF Belgium",
+  "description": "examples, exercises and guides for the HTML && CSS module at HYF Belgium",
   "scripts": {
     "format": "prettier --write ./",
     "format:check": "prettier --check ./",

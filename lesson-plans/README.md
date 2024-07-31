@@ -1,25 +1,9 @@
-# HTML & CSS
+# Lesson Plans
 
-## HTML
+## Week 1
 
-> What is HTML?
+[CLICK HERE](./week-1.md)
 
-[html](../materials/html.md)
+## Week 2
 
-## CSS
-
-> What is CSS?
-
-[css basic](../materials/css-basic.md)
-
-[css advanced](../materials/css-advanced.md)
-
-## Responsive website
-
-> What is a responsive webiste?
-
-[a responsive webiste](../materials/responsive.md)
-
-## Projects
-
-[Portfolio](../deliverables/portfolio.md)
+[CLICK HERE](./week-2.md)
