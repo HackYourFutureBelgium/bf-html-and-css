@@ -1,24 +1,24 @@
 # HTML
 
-> What is HTML ?
+## What is HTML?
 
-- HTML stands for `Hyper Text Markup Language`
-- HTML is the standard `markup language` for creating `Web pages`
-- HTML describes the structure of a Web page
-- HTML consists of a `series of elements`
-- HTML elements tell the browser how to display the content
-- HTML elements label pieces of content such as "this is a heading", "this is a
-  paragraph", "this is a link", etc.
+- **HTML** stands for **Hyper Text Markup Language**.
+- It is the standard **markup language** used for creating **Web pages**.
+- HTML **describes the structure** of a Web page.
+- It consists of a **series of elements**.
+- HTML elements **tell the browser** how to display the content.
+- These elements **label pieces of content** such as "this is a heading", "this
+  is a paragraph", "this is a link", etc.
 
 ![website layout](../assets/layout.png)
 
-## HTML structure
+## HTML Structure
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- TODO: Write your comments here -->
+    <!-- Metadata and links to external resources -->
     <link rel="icon" href="http://example.com/favicon.png" />
     <title>Page Title</title>
   </head>
@@ -33,58 +33,69 @@
 </html>
 ```
 
-- The `<!DOCTYPE html>` declaration defines that this document is an HTML5
-  document
-- The `<html>` element is the root element of an HTML page
-- The `<head>` element contains meta information about the HTML page
-- The `<title>` element specifies a title for the HTML page (which is shown in
-  the browser's title bar or in the page's tab)
-- The `<body>` element defines the document's body, and is a container for all
-  the visible contents, such as headings,
+- The `<!DOCTYPE html>` declaration defines the document type as HTML5.
+- The `<html>` element is the root element of an HTML page.
+- The `<head>` element contains metadata about the HTML document.
+- The `<title>` element specifies the title for the HTML page (shown in the
+  browser's title bar or tab).
+- The `<body>` element defines the document's body, containing all the visible
+  content such as headings, paragraphs, images, links, etc.
 
-### HTML element
+## HTML Elements
 
-An HTML element is defined by a open `<tag>`, some content and close `</tag>`.
-Note: Some HTML elements have no content (like the `<br>` element). These
-elements are called empty elements. Empty elements do not have an end tag!
+An HTML element is defined by an opening `<tag>`, content, and a closing
+`</tag>`. Some HTML elements, like `<br>`, are empty and do not have closing
+tags.
 
-### Headings
+## Headings
+
+Headings are defined with the `<h1>` to `<h6>` tags, `<h1>` being the highest
+(or most important) level and `<h6>` the lowest.
 
 ```html
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
 <h3>This is heading 3</h3>
-<h4>This is heading 4</h4>
+<h4>This is heading 4</h5>
 <h5>This is heading 5</h5>
 <h6>This is heading 6</h6>
 ```
 
-### Paragraphs
+## Paragraphs
+
+Paragraphs are defined with the `<p>` tag.
 
 ```html
 <p>This is a paragraph</p>
 ```
 
-### Links
+## Links
+
+Links are defined with the `<a>` tag, which stands for "anchor". The `href`
+attribute specifies the URL of the page the link goes to.
 
 ```html
 <a href="https://hackyourfuture.be/">This is a link</a>
 ```
 
-### Images
+## Images
+
+Images are defined with the `<img>` tag. The `src` attribute specifies the path
+to the image, and the `alt` attribute provides alternative text for the image.
 
 ```html
-<img src="hyf.jpg" alt="hyf" />
+<img src="hyf.jpg" alt="HYF Logo" />
 ```
 
-### Attributes
+## Attributes
 
-All HTML elements can have attributes Attributes
-`provide additional information about elements` Attributes are always specified
-in the `start tag` Attributes usually come in name/value pairs like:
-`name="value"`
+Attributes provide additional information about HTML elements. They are always
+included in the opening tag and usually come in name/value pairs like
+`name="value"`.
 
-### Formatting elements
+## Formatting Elements
+
+HTML provides several tags for text formatting:
 
 - `<b>` - Bold text
 - `<strong>` - Important text
@@ -93,11 +104,15 @@ in the `start tag` Attributes usually come in name/value pairs like:
 - `<mark>` - Marked text
 - `<small>` - Smaller text
 - `<del>` - Deleted text
-- `<ins>` -Inserted text
+- `<ins>` - Inserted text
 - `<sub>` - Subscript text
 - `<sup>` - Superscript text
 
-### Tables
+## Tables
+
+Tables are used to display tabular data and are defined with the `<table>` tag.
+Inside the table, the data is structured with `<tr>` (table rows), `<th>` (table
+headers), and `<td>` (table data cells).
 
 ```html
 <table>
@@ -119,7 +134,11 @@ in the `start tag` Attributes usually come in name/value pairs like:
 </table>
 ```
 
-### Lists
+## Lists
+
+HTML supports ordered (`<ol>`) and unordered (`<ul>`) lists.
+
+### Unordered List
 
 ```html
 <ul>
@@ -127,7 +146,11 @@ in the `start tag` Attributes usually come in name/value pairs like:
   <li>Tea</li>
   <li>Milk</li>
 </ul>
+```
 
+### Ordered List
+
+```html
 <ol>
   <li>Coffee</li>
   <li>Tea</li>
@@ -135,28 +158,28 @@ in the `start tag` Attributes usually come in name/value pairs like:
 </ol>
 ```
 
-### Block and Inline Elements
+## Block and Inline Elements
 
-#### Block-level Elements
+### Block-level Elements
 
-A block-level element always starts on a new line, and the browsers
-automatically add some space (a margin) before and after the element.
+A block-level element always starts on a new line and stretches out to the left
+and right as far as it can. Examples include `<div>`, `<h1>`, `<p>`, and
+`<table>`.
 
-#### Inline Elements
+### Inline Elements
 
-An inline element does not start on a new line.
+An inline element does not start on a new line and only takes up as much width
+as necessary. Examples include `<span>`, `<a>`, and `<img>`.
 
 ```html
 <p>Hello World</p>
 <div>Hello World</div>
-
 <span>Hello World</span>
 ```
 
-### Iframe
+## Iframe
 
-An inline frame is used to embed another document within the current HTML
-document.
+An iframe is used to embed another document within the current HTML document.
 
 ```html
 <iframe
@@ -167,56 +190,73 @@ document.
 ></iframe>
 ```
 
-### Responsive Web Design
+## Responsive Web Design
 
-A responsive web design will automatically adjust for different screen sizes and
-viewport.
+Responsive web design allows a web page to adapt to different screen sizes and
+viewports.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
-### Semantic Elements
+## Semantic Elements
 
-A semantic element clearly describes its meaning to both the browser and the
-developer.
+Semantic elements clearly describe their meaning in a human- and
+machine-readable way.
 
-Examples of non-semantic elements: `<div>` and `<span>` - Tells nothing about
-its content.
+### Examples of Non-semantic Elements
 
-Examples of semantic elements: `<form>`, `<table>`, and `<article>` - Clearly
-defines its content.
+- `<div>` and `<span>` do not convey any information about their content.
 
-### Absolute path vs relative path
+### Examples of Semantic Elements
+
+- `<form>`, `<table>`, and `<article>` clearly define their content.
+
+## Absolute Path vs Relative Path
+
+### Absolute Path
 
 ```html
 <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" />
-
-<img src="../assets/html-css.png" alt="Mountain" />
 ```
 
-### Entities
+### Relative Path
+
+```html
+<img src="../assets/html-css.png" alt="HTML and CSS" />
+```
+
+## Entities
+
+HTML entities are used to display reserved characters.
 
 ```html
 <!-- copyright -->
 <div>&#169;</div>
 ```
 
-### Symbols
+## Symbols
+
+HTML supports various symbols.
 
 ```html
 <!-- euro -->
 <div>&euro;</div>
 ```
 
-### Emojis
+## Emojis
+
+HTML supports emojis through entities.
 
 ```html
 <!-- smiley face -->
 <div>&#128512;</div>
 ```
 
-### Forms
+## Forms
+
+Forms are used to collect user input. Various types of inputs are available,
+such as text, radio buttons, and checkboxes.
 
 ```html
 <form>
@@ -225,7 +265,11 @@ defines its content.
   <label for="lastName">Last name:</label><br />
   <input type="text" id="lastName" name="lastName" />
 </form>
+```
 
+### Various Input Types
+
+```html
 <!-- 
 <input type="button" />
 <input type="checkbox" />
@@ -251,14 +295,22 @@ defines its content.
 -->
 ```
 
-### Videos
+## Videos and Audio
+
+HTML supports embedding media such as videos and audio.
+
+### Video Example
 
 ```html
 <video width="320" height="240" controls>
   <source src="movie.mp4" type="video/mp4" />
 </video>
+```
 
-<audio>
+### Audio Example
+
+```html
+<audio controls>
   <source src="horse.mp3" type="audio/mpeg" />
 </audio>
 ```

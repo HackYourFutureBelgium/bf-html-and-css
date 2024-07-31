@@ -1,9 +1,9 @@
-# CSS
+# CSS Advanced
 
-## border-radius
+## Border Radius
 
 ```css
-/* border-radius :  you can give any element "rounded corners" */
+/* border-radius: Gives any element "rounded corners" */
 .showcase img {
   border-radius: 12px;
   background: #73ad21;
@@ -11,27 +11,26 @@
   width: 200px;
   height: 150px;
 
-  /* 
-  border-radius: 25px 10px 20px 13px; 
-  border-radius: 50%; 
-  */
+  /* Example values: */
+  /* border-radius: 25px 10px 20px 13px; */
+  /* border-radius: 50%; */
 }
 ```
 
-## 2D transform
+## 2D Transform
 
 ```css
 /* 
-transform allows you to move, rotate, scale, and skew elements.
-values :   X     Y
-translate(10px, 20px) : moves an element from its current position to a new position.
-rotate(20deg) : rotates an element clockwise(20deg) or counter-clockwise(-20deg).
-scaleX(3) : increases or decreases the element width.
-scaleY(10) : increases or decreases the element height.
-scale(2,3) : increases or decreases the size of an element. 2(width), 3(height).
-skewX(20deg) : method skews an element along the X-axis by the given angle.
-skewY(40deg) : method skews an element along the Y-axis by the given angle.
-skew(20deg,40deg) : method skews an element along the X-axis and Y-axis by the given angle
+transform: Allows you to move, rotate, scale, and skew elements.
+Values: X, Y
+- translate(10px, 20px): Moves an element from its current position to a new position.
+- rotate(20deg): Rotates an element clockwise (20deg) or counter-clockwise (-20deg).
+- scaleX(3): Increases or decreases the element's width.
+- scaleY(10): Increases or decreases the element's height.
+- scale(2,3): Increases or decreases the size of an element. 2 (width), 3 (height).
+- skewX(20deg): Skews an element along the X-axis by the given angle.
+- skewY(40deg): Skews an element along the Y-axis by the given angle.
+- skew(20deg,40deg): Skews an element along the X-axis and Y-axis by the given angle.
 */
 
 div {
@@ -39,15 +38,15 @@ div {
 }
 ```
 
-## 3D transform
+## 3D Transform
 
 ```css
 /* 
-transform:  allows you rotate element in 3D
-values :  
-rotateX()
-rotateY()
-rotateZ()
+transform: Allows you to rotate elements in 3D space.
+Values:
+- rotateX()
+- rotateY()
+- rotateZ()
 */
 
 div {
@@ -55,20 +54,20 @@ div {
 }
 ```
 
-## transitions
+## Transitions
 
 ```css
 /*
-transitions allows you to change property values, over a given duration.
-To create a transition effect, you must specify two things:
+transitions: Allows you to change property values over a specified duration.
+To create a transition effect, specify:
+- The CSS property to animate
+- The duration of the effect
 
-the CSS property you want to add an effect to
-the duration of the effect
-
-transition-property:background-color 
-transition-duration: 3s
-transition-timing-function: linear, ease, ease-in, ease-out, ease-in-out
-transition-delay: 1s;
+Example properties:
+- transition-property: background-color
+- transition-duration: 3s
+- transition-timing-function: linear, ease, ease-in, ease-out, ease-in-out
+- transition-delay: 1s;
 */
 
 div {
@@ -81,12 +80,12 @@ div:hover {
 }
 ```
 
-## animations
+## Animations
 
 ```css
 /*
-animation : allows an element gradually change from one style to another.
-To use CSS animation, you must first specify some keyframes for the animation.
+animations: Allows elements to gradually change from one style to another.
+To use CSS animation, define keyframes for the animation.
 */
 
 @keyframes box-move {
@@ -117,7 +116,7 @@ To use CSS animation, you must first specify some keyframes for the animation.
   }
 }
 
-/* The element to apply the animation to */
+/* Element to apply the animation to */
 div {
   width: 100px;
   height: 100px;
@@ -127,16 +126,15 @@ div {
   animation-duration: 10s;
   animation-delay: 2s;
   animation-iteration-count: 3;
-  /* animation-iteration-count: infinite;    */
+  /* animation-iteration-count: infinite; */
 }
 ```
 
-## tooltip
+## Tooltip
 
 ```css
 /* 
-tooltip : used to specify extra information about something 
-when the user moves the mouse pointer over an element 
+tooltip: Specifies extra information about something when the user moves the mouse pointer over an element.
 */
 
 .tooltip {
@@ -157,15 +155,15 @@ when the user moves the mouse pointer over an element
 }
 ```
 
-## variables
+## Variables
 
 ```css
 /*
-To create a variable with global scope, declare it inside the :root selector.
-The :root selector matches the document's root element.
-the variable name must start with two --   ex: --primary-color
-we can use the var(--name) to insert the variable value
+Variables: Create a variable with global scope inside the :root selector.
+Variable names start with --, e.g., --primary-color.
+Use var(--name) to insert the variable value.
 */
+
 :root {
   --primary-color: #1e90ff;
 }

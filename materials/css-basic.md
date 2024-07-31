@@ -1,11 +1,11 @@
 # CSS
 
-> What is HTML ?
+## What is CSS?
 
-- CSS stands for Cascading Style Sheets
-- CSS describes how HTML elements are to be displayed on screen.
-- CSS can control the layout of multiple web pages all at once
-- External stylesheets are stored in CSS files
+- **CSS** stands for **Cascading Style Sheets**.
+- It describes how HTML elements are displayed on screen.
+- CSS can control the layout of multiple web pages simultaneously.
+- External stylesheets are typically stored in `.css` files.
 
 ## Syntax
 
@@ -17,12 +17,12 @@ selector {
 }
 ```
 
-## Selector
+## Selectors
 
-### Simple selector
+### Simple Selectors
 
 ```css
-/* This is a comment  */
+/* This is a comment */
 
 *,
 *::after,
@@ -53,74 +53,65 @@ p.paragraph {
 }
 ```
 
-### Combinator selector
+### Combinator Selectors
 
 ```css
-/* descendant selector : select all <p> inside section */
+/* Descendant selector: Select all <p> inside section */
 section p {
   color: #21211f;
 }
 
-/*  child selector : select all <p> which are direct children inside section */
+/* Child selector: Select all <p> which are direct children inside section */
 section > p {
   color: #21211f;
 }
 
-/*  Adjacent Sibling  selector : 
-both div and p must have the same parent and it will select all <p> which
-come after <div> immediately 
-*/
+/* Adjacent Sibling selector: Select <p> that come immediately after <div> */
 div + p {
   color: #21211f;
 }
 
-/*  General Sibling  selector : 
-both div and p must have the same parent and it will select all <p> which
-are sibling to <div> and come after the <div>
-*/
+/* General Sibling selector: Select all <p> siblings of <div> */
 div ~ p {
   color: #21211f;
 }
 ```
 
-### Pseudo-class selector
+### Pseudo-class Selectors
 
 ```css
-/* A pseudo-class is used to define a special state of an element. */
-/* visited link */
+/* A pseudo-class defines a special state of an element. */
+
+/* Visited link */
 a:visited {
   color: #00ff00;
 }
 
-/* mouse over link */
+/* Mouse over link */
 a:hover {
   color: #ff00ff;
 }
 
-/* selected link */
+/* Active link */
 a:active {
   color: #0000ff;
 }
 
-/* it will select the first <p> which is the first child of another element */
+/* Select the first <p> which is the first child of another element */
 section p:first-child {
   color: blue;
 }
-/* it will select the first <p> which is the first child of another element */
+
+/* Select the first <p> which is the first child of another element */
 section p:nth-child(1) {
   color: blue;
 }
 ```
 
-### Pseudo-element selector
+### Pseudo-element Selectors
 
 ```css
-/* A CSS pseudo-element is used to style specified parts of an element.
-
-For example, it can be used to:
-
-Style the first letter, or line, of an element
-Insert content before, or after, the content of an element */
+/* Style specific parts of an element. */
 
 h1::before {
   content: url(./smiley.gif);
@@ -131,25 +122,25 @@ h1::after {
 }
 ```
 
-### Attribute selector
+### Attribute Selectors
 
 ```css
 a[target="_blank"] {
   background-color: yellow;
 }
-/* any class "hide", or "hide-" */
+/* Select any class "hide" or "hide-" */
 [class|="hide"] {
   background: yellow;
 }
-/* any class start with "hid" */
+/* Select any class starting with "hid" */
 [class^="hid"] {
   background: yellow;
 }
-/* any class end with "den" */
+/* Select any class ending with "den" */
 [class$="den"] {
   background: yellow;
 }
-/* any class contain "te" */
+/* Select any class containing "te" */
 [class*="te"] {
   background: yellow;
 }
@@ -162,7 +153,7 @@ input[type="text"] {
 }
 ```
 
-## color
+## Color
 
 ```css
 section > h2 {
@@ -182,7 +173,7 @@ section > h2 {
 }
 ```
 
-## background
+## Background
 
 ```css
 div {
@@ -193,7 +184,7 @@ div {
 }
 ```
 
-## border
+## Border
 
 ```css
 p {
@@ -201,7 +192,7 @@ p {
 }
 ```
 
-## margin
+## Margin
 
 ```css
 p {
@@ -212,7 +203,7 @@ p {
 }
 ```
 
-## icons
+## Icons
 
 ```html
 <!DOCTYPE html>
@@ -231,31 +222,31 @@ p {
 </html>
 ```
 
-## links
+## Links
 
 ```css
-/* unvisited link */
+/* Unvisited link */
 a:link {
   color: red;
 }
 
-/* visited link */
+/* Visited link */
 a:visited {
   color: green;
 }
 
-/* mouse over link */
+/* Mouse over link */
 a:hover {
   color: hotpink;
 }
 
-/* selected link */
+/* Selected link */
 a:active {
   color: blue;
 }
 ```
 
-## lists
+## Lists
 
 ```css
 ul {
@@ -263,7 +254,7 @@ ul {
 }
 ```
 
-## display
+## Display
 
 ```css
 h1 {
@@ -275,7 +266,7 @@ h2 {
 }
 ```
 
-## width
+## Width
 
 ```css
 div {
@@ -287,39 +278,36 @@ div {
 }
 ```
 
-## position
+## Position
 
 ```css
-/* default value is static  */
+/* Default value is static */
 div {
   position: relative;
 }
 
 div span {
   position: absolute;
-  top: 30px
+  top: 30px;
   left: 50px;
 }
 /*
-static : Static positioned elements are not affected by the top, bottom, left, and right properties.
+static: Static positioned elements are not affected by the top, bottom, left, and right properties.
 
-fixed :is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled
+fixed: Positioned relative to the viewport, always stays in the same place even if the page is scrolled.
 
-relative: is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position
+relative: Positioned relative to its normal position. Adjusted with top, right, bottom, and left properties.
 
-absolute: is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
-However; if an absolute positioned element has no positioned ancestors, it uses the document body
+absolute: Positioned relative to the nearest positioned ancestor. Uses the document body if no positioned ancestors are found.
 
-sticky: is positioned based on the user's scroll position.
+sticky: Positioned based on the user's scroll position.
 */
 ```
 
-## Z-index
+## Z-Index
 
 ```css
-/* 
-z-index : controls which element should be placed in front of, or behind, the others 
-*/
+/* z-index controls the stacking order of elements */
 
 img {
   position: absolute;
@@ -329,27 +317,25 @@ img {
 }
 ```
 
-## overflow
+## Overflow
 
 ```css
-/* 
-overflow  controls what happens to content that is too big to fit into an area. 
-*/
+/* overflow controls content that is too big to fit into an area. */
 
 div {
   width: 200px;
   height: 65px;
   background-color: coral;
   overflow: visible;
-  /* 
-  overflow: hidden; 
-  overflow: scroll; 
-  overflow: auto;   add scroll only when necessary 
+  /*
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;   /* Add scroll only when necessary */
   */
 }
 ```
 
-## float
+## Float
 
 ```css
 img {
@@ -361,13 +347,13 @@ img {
 }
 ```
 
-## display-inline-block
+## Display Inline-block
 
 ```css
 /* 
-inline : can't set the height and the width of the element, top and bottom margin and padding are not respected 
-inline-block : you cab set the height, width and top and bottom margin and padding will be respected 
-block : add a line break after the element.
+inline: Can't set height and width; top and bottom margin and padding are not respected.
+inline-block: Can set height, width; top and bottom margin and padding are respected.
+block: Adds a line break after the element.
 */
 span {
   display: inline-block;
@@ -378,39 +364,38 @@ span {
 }
 ```
 
-## units
+## Units
 
 ```css
 /* 
-Absolute units
+Absolute units:
 cm
 mm
-in  1in= 2.54cm
+in  (1in = 2.54cm)
 px 
 pt 
 
-Relative units
-em  : 2em means 2 times the size of the current font
-rem : Relative to font-size of the root element
-vw  : Relative to 1% of the width of the viewport
-vh  : Relative to 1% of the height of the viewport
-%   : Relative to the parent element
-
- */
+Relative units:
+em: 2em means 2 times the size of the current font.
+rem: Relative to the font-size of the root element.
+vw: Relative to 1% of the width of the viewport.
+vh: Relative to 1% of the height of the viewport.
+%: Relative to the parent element.
+*/
 h1 {
   font-size: 60px;
 }
 ```
 
-## specificity
+## Specificity
 
 ```css
 /* 
-1- Inline styles - Example: <h1 style="color: pink;">
-2- IDs - Example: #navbar
-3- Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
-4- Elements and pseudo-elements - Example: h1, ::before 
-5- universal selector * 
+1. Inline styles: Example: <h1 style="color: pink;">
+2. IDs: Example: #navbar
+3. Classes, pseudo-classes, attribute selectors: Example: .test, :hover, [href]
+4. Elements and pseudo-elements: Example: h1, ::before 
+5. Universal selector * 
 */
 ```
 
@@ -418,7 +403,7 @@ h1 {
 
 ```css
 /* 
-!important rule, it will override ALL previous styling rules for that specific property on that element! 
+!important rule overrides all previous styling rules for that specific property on that element.
 */
 #my-id {
   background-color: blue;
